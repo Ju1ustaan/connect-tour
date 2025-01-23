@@ -15,13 +15,13 @@ export default function Home() {
       width={500}
       height={300}
       className="w-[200px] h-[60px] md:w-[500px] md:h-[150px] z-10 "
-      ></Image>
+      />
       <Image
       src={'/assets/map-olive.png'}
       alt="logo connect"
       width={500}
       height={300}
-      className="w-[200px] h-[100px] md:w-[300px] md:h-[200px] lg:w-[500px] lg:h-[300px] z-10 absolute top-5 right-0 -rotate-12"></Image>
+      className="w-[200px] h-[100px] md:w-[300px] md:h-[200px] lg:w-[500px] lg:h-[300px] z-10 absolute top-5 right-0 -rotate-12"/>
     </main> 
     );
 }

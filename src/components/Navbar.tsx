@@ -1,5 +1,4 @@
 import { Socials } from "@/constants"
-import { a } from "framer-motion/client"
 import Image from "next/image"
 
 
@@ -15,7 +14,7 @@ const Navbar = () => {
             <div className="flex flex-row gap-5">
                 {
                     Socials.map((social, idx) => (
-                        <a href={social.path} target="_blank" key={idx}>
+                        <a href={social.path} target="_blank" key={`${social.name}${idx}`}>
                             <Image
                             src={social.src}
                             alt={social.name}

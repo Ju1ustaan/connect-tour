@@ -24,11 +24,11 @@ const TeamSlider = () => {
         freeMode={true}
         pagination={{clickable: true}}
         modules={[FreeMode, Pagination]}>
-            <SwiperSlide className='mb-14'>
+            <SwiperSlide className='mb-14' key={1}>
                 <div className='grid grid-cols-2 gap-4 px-10'>
                     {
-                        ProImages.map((img) => ( 
-                            <div className='relative h-[240px] group' key={img.src}>
+                        ProImages.map((img, idx) => ( 
+                            <div className='relative h-[240px] group' key={`${img.src}${idx}`}>
                                 <Image
                                 src={img.src}
                                 alt="teammate"
@@ -45,11 +45,11 @@ const TeamSlider = () => {
                 </div>
                 
             </SwiperSlide>
-            <SwiperSlide className='mb-14'>
+            <SwiperSlide className='mb-14' key={2}>
                 <div className='grid grid-cols-2 gap-4 px-10'>
                     {
-                        ProImages2.map((img) => ( 
-                            <div className='relative group h-[240px]' key={img.src}>
+                        ProImages2.map((img, idx) => ( 
+                            <div className='relative group h-[240px]' key={`${img.src}${idx}`}>
                                 <Image
                                 src={img.src}
                                 alt="teammate"
